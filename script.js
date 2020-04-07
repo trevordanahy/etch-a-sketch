@@ -21,8 +21,17 @@ function createGrid(gridSize) {
   }
 }
 
+function draw() {
+  let grid = document.querySelectorAll('div.cell');
+    grid.forEach () {
+      
+    }
+
+}
+
 function reset (){};
 function changeGrid () {};
 function bttnPress (){};
 
-createGrid(16);
+createGrid(8);
+draw();
