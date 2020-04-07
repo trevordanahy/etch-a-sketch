@@ -1,0 +1,79 @@
+
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.stretch {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  filter: blur(3px);
+}
+
+
+#theEtchASketch {
+    height: 60vh;
+    width: 50vw;
+    border: 90px solid #a80e03;
+    border-bottom: 90px solid #a80e03;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.cell {
+  border: 0.1px solid #f6f6f6;
+  background-color: white;
+  width: auto;
+  height: auto;
+}
+
+#etchScreen {
+  display: grid;
+  height:100%;
+  width: 100%;
+  box-shadow: 0 0 5px black;
+}
+
+#bottomPannel {
+  position: relative;
+  display:grid;
+}
+
+.bttn {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  font-weight: bold;
+}
+
+#resetBttn {
+  position:absolute;
+  right: -70px;
+}
+
+#changeGridBttn {
+  position: absolute;
+  left: -70px;
+}
+
+#logo {
+  postion:absolute;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  top: 5px;
+  color: #ad930b;
+  text-shadow: 2px 2px black;
+}
