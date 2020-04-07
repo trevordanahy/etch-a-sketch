@@ -19,19 +19,19 @@ function createGrid(gridSize) {
     cell.classList.add('cell');
     etchScreen.appendChild(cell);
   }
-}
 
-function draw() {
-  let grid = document.querySelectorAll('div.cell');
-    grid.forEach () {
-      
-    }
+  let grid = document.querySelectorAll('.cell');
+    grid.forEach ((cell) => {
+      cell.addEventListener('mouseover', (e) => {
+        cell.classList.add('active');
+      }); 
+    });
+};
 
-}
 
 function reset (){};
 function changeGrid () {};
 function bttnPress (){};
 
-createGrid(8);
-draw();
+createGrid(16);
+

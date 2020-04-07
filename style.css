@@ -27,13 +27,6 @@
     margin-top: 90px;
 }
 
-.cell {
-  border: 0.1px solid #f6f6f6;
-  background-color: white;
-  width: auto;
-  height: auto;
-}
-
 #etchScreen {
   display: grid;
   height:100%;
@@ -44,18 +37,6 @@
 #bottomPannel {
   position: relative;
   display:grid;
-}
-
-.bttn {
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1px solid black;
-  box-shadow: 0 0 10px black;
-  text-align: center;
-  font-weight: bold;
 }
 
 #resetBttn {
@@ -76,4 +57,27 @@
   top: 5px;
   color: #ad930b;
   text-shadow: 2px 2px black;
+}
+.cell {
+  border: 0.1px solid #f6f6f6;
+  background-color: white;
+  width: auto;
+  height: auto;
+}
+
+.bttn {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.active {
+  background-color: black;
+  border: 0.1px solid black;
 }
