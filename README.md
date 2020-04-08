@@ -20,13 +20,11 @@
    <li>Reset Button Functionality</li>
     <ul>
         <li>Rotate button 360</li>
-		    <li>shake the etch-a-sketch up and down</li>
 		    <li>set all squares to white</li>
       </ul>
     <li>Change Size Button Functionality</li>
     <ul>
 		  <li>Promt user for new grid size</li>
-		  <li>validate user input</li>
 		  <li>Run Rest button function</li>
 		  <li>Generate New Grid</li>
     </ul>

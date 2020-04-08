@@ -10,6 +10,7 @@ const etchScreen = document.querySelector('#etchScreen');
 const resetBttn = document.querySelector('#resetBttn');
 const changeGridBttn = document.querySelector('#changeGridBttn')
 
+
 // Create a function to generate a new grid with specifed row/column size, default function call below 16
 function createGrid(gridSize) {
   etchScreen.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
@@ -28,10 +29,26 @@ function createGrid(gridSize) {
     });
 };
 
-
-function reset (){};
-function changeGrid () {};
-function bttnPress (){};
-
 createGrid(16);
+
+// Reset button spins and removes the active class which makes the cells white again
+resetBttn.addEventListener('click', (e) => {
+  let grid = document.querySelectorAll('.cell');
+  grid.forEach((cell) => {
+    cell.classList.remove('active');
+  });
+})
+
+// Change Grid button spins, removes drawing, and prompts user for new column/row size before creating a new grid
+changeGridBttn.addEventListener('click', (e) => {
+  let grid = document.querySelectorAll('.cell');
+  grid.forEach((cell) => {
+    cell.classList.remove('active');
+  });
+    
+  gridSize = prompt("How many column/rows do you want?(1-100)");
+  createGrid(gridSize);
+});
+
+
 
